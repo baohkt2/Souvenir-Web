@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+/* Thêm đường viền và bóng cho thẻ a */
+.navbar-nav a, .btn-router {
+    width: fit-content;
+    border-radius: 5px;
+    /* Góc bo tròn */
+    padding: 5px;
+    /* Khoảng cách giữa nội dung và viền */
+    margin: 5px 25px;
+    /* Khoảng cách giữa các thẻ a */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Bóng */
+}
+
+/* Hiệu ứng hover */
+.navbar-nav a:hover, .btn-router a:hover {
+    background-color: #ffc107;
+    /* Màu nền khi hover */
+    color: #fff;
+    /* Màu chữ khi hover */
+    transition: 0.3s;
+    /* Hiệu ứng chuyển động */
+}
+
+/* Đổi font và tăng kích thước font */
+.navbar-nav a {
+    font-family: 'Pacifico', sans-serif;
+    /* Đổi font */
+    font-size: 18px;
+    /* Tăng kích thước font */
+}
+
+/* Màu nền thanh navbar */
+
+/* Thêm đường viền cho input search */
+.form-control {
+    font-family: 'Pacifico', sans-serif;
+    border: 1px solid #ffc107;
+    /* Màu vàng nhạt */
+}
+
+.btn {
+    font-family: 'Pacifico', sans-serif;
+}
+
+/* Hiệu ứng hover cho nút Search */
+.btn-outline-success:hover {
+    background-color: #ffc107;
+    /* Màu nền khi hover */
+    border-color: #ffc107;
+    /* Màu viền khi hover */
+    color: #fff;
+    /* Màu chữ khi hover */
+    transition: 0.3s;
+    /* Hiệu ứng chuyển động */
+}
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Abhaya Libre';
+}
+
+body {
+    margin: 0 auto;
+    padding: 5px;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.navbar-font {
+    font: 'Pacifico';
+}
+
+.imghi img {
+    position: absolute;
+    margin-left: 5vw;
+    margin-top: 5vh;
+    border-radius: 10px;
+    max-height: 450px;
+    max-width: 500px;
+    background-color: #f7ecde;
+    background-color: #ffb048;
+    background-color: #ffd092;
+}
+
+.hithere {
+    margin-top: 50px;
+    height: 50vh;
+    background-color: #f7ecde;
+}
+
+.hithere p {
+    font-size: 25px;
+    padding-top: 50px;
+    padding-left: 600px;
+    padding-right: 90px;
+}
+
+.hithere input {
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 700px;
+    margin-right: 90px;
+    font-weight: bolder;
+    height: 40px;
+    width: 120px;
+    background-color: #ffd092;
+    border: none;
+    border-radius: 10px;
+}
+
+.hithere input:hover {
+    background-color: #ffb048;
+}
+
+.category {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.category h2 {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 35px;
+}
+
+.category #img-x {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.category img {
+    background-color: #f7ecde;
+    height: 190px;
+    width: 190px;
+    border-radius: 10px;
+}
+
+.category p {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 35px;
+    font-family: 'Papyrus', sans-serif;
+}
+
+hr {
+    border: 2px solid rgb(138, 137, 137, 0.5);
+    width: 70%;
+    margin: auto;
+}
+
+.Share {
+    margin-top: 100px;
+    background-color: #f7ecde;
+    height: 50%;
+}
+
+.Share h1 {
+    padding-top: 20px;
+    font-size: 45px;
+    text-align: center;
+}
+
+.Share p {
+    text-align: center;
+    font-size: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+header {
+    position: relative;
+    text-align: center;
+}
+
+header {
+    content: '';
+    /* Đường dẫn đến hình nền */
+    height: fit-content;
+    border-radius: 20px;
+    background-color: #fff8ef;
+    /* Đảm bảo nó nằm dưới class header */
+    /* Điều chỉnh độ trong suốt của background */
+}
+
+/* Thêm phần này vào CSS của bạn */
+.snowflakes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.snowflake {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 200px;
+    color: #fff;
+    /* Màu của bông tuyết */
+    border-radius: 50%;
+    animation: snowfall linear infinite;
+    animation-duration: 10s;
+    /* Điều chỉnh tốc độ rơi của bông tuyết */
+}
+
+@keyframes snowfall {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+.header-candy {
+    position: absolute;
+    animation-name: header-candy;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes header-candy {
+    from {
+        top: -30%;
+    }
+
+    to {
+        top: 30%;
+    }
+}
+
+.header-light {
+    position: absolute;
+    animation-name: header-light;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes header-light {
+    from {
+        top: -100%;
+    }
+
+    to {
+        top: 0%;
+    }
+}
+
+
+.header-cloud {
+    position: absolute;
+    height: 50px;
+    animation-name: header-light;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes header-cloud {
+    from {
+        top: -100%;
+    }
+
+    to {
+        top: -20%;
+    }
+}
+
+.header-satan {
+    position: absolute;
+    background: url('../assets/images/header/car.png') repeat-x;
+    /* Đường dẫn đến ảnh satan và lặp lại chiều ngang */
+    animation: slideSatan 30s linear infinite;
+    z-index: -1;
+    /* Thời gian, tốc độ, và kiểu chuyển động */
+}
+
+@keyframes slideSatan {
+    from {
+        left: 0%;
+    }
+    to {
+        left: 90%
+    }
+}
+
+.satan {
+    width: 150px;
+}
